@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ ! -f "${HOME}/.config/.kchzmi.txt" ]; then
+    age --decrypt --output "${HOME}/.config/.kchzmi.txt" "{{ .chezmoi.sourceDir }}/key.txt.age"
+    chmod 600 "${HOME}/.config/.kchzmi.txt"
+fi
