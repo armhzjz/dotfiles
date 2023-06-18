@@ -1,3 +1,4 @@
 key.txt.age
 ~/.aws/sso/
 ~/.aws/cli/
+~/.ssh/known_hosts
